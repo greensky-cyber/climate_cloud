@@ -140,7 +140,7 @@ st.markdown("<hr style='border:2px solid #4A4A4A;'>", unsafe_allow_html=True)
 @st.cache_data
 def load_data():
     try:
-        df = pd.read_csv("Climate_Dataset.csv")
+        df = pd.read_excel("Climate_Dataset.csv.xlsx")
 
         # Cleaning
         df.drop_duplicates(inplace=True)
